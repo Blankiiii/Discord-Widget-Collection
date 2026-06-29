@@ -1,7 +1,7 @@
 # Anime Watchlist
 ## Widget Layout
 
-
+<img width="953" height="449" alt="image" src="https://github.com/user-attachments/assets/d5d1502b-9ba2-488a-922f-54ed35211ecb" />
 
 ## JSON 
 ```JSON
