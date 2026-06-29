@@ -1,5 +1,5 @@
 # Rainbow Six - Stats Widget
-(Widget Layout)
+## Widget Layout
 <img width="956" height="798" alt="image" src="https://github.com/user-attachments/assets/172db208-eed2-4ad7-a1b8-80f51b277ca3" />
 
 
