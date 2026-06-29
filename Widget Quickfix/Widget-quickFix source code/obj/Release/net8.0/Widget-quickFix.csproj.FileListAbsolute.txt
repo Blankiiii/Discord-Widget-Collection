@@ -16,3 +16,18 @@ C:\Users\leonm\3d Objects\programming\VS2022\Widget-quickFix\bin\Release\net8.0\
 C:\Users\leonm\3d Objects\programming\VS2022\Widget-quickFix\bin\Release\net8.0\Widget-quickFix.application
 C:\Users\leonm\3d Objects\programming\VS2022\Widget-quickFix\obj\Release\net8.0\Widget-quickFix.dll.manifest
 C:\Users\leonm\3d Objects\programming\VS2022\Widget-quickFix\obj\Release\net8.0\Widget-quickFix.application
+C:\Users\leonm\Documents\GitHub\Discord-Widget-Collection\Widget Quickfix\Widget-quickFix source code\bin\Release\net8.0\Widget-quickFix.exe
+C:\Users\leonm\Documents\GitHub\Discord-Widget-Collection\Widget Quickfix\Widget-quickFix source code\bin\Release\net8.0\Widget-quickFix.deps.json
+C:\Users\leonm\Documents\GitHub\Discord-Widget-Collection\Widget Quickfix\Widget-quickFix source code\bin\Release\net8.0\Widget-quickFix.runtimeconfig.json
+C:\Users\leonm\Documents\GitHub\Discord-Widget-Collection\Widget Quickfix\Widget-quickFix source code\bin\Release\net8.0\Widget-quickFix.dll
+C:\Users\leonm\Documents\GitHub\Discord-Widget-Collection\Widget Quickfix\Widget-quickFix source code\bin\Release\net8.0\Widget-quickFix.pdb
+C:\Users\leonm\Documents\GitHub\Discord-Widget-Collection\Widget Quickfix\Widget-quickFix source code\obj\Release\net8.0\Widget-quickFix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leonm\Documents\GitHub\Discord-Widget-Collection\Widget Quickfix\Widget-quickFix source code\obj\Release\net8.0\Widget-quickFix.AssemblyInfoInputs.cache
+C:\Users\leonm\Documents\GitHub\Discord-Widget-Collection\Widget Quickfix\Widget-quickFix source code\obj\Release\net8.0\Widget-quickFix.AssemblyInfo.cs
+C:\Users\leonm\Documents\GitHub\Discord-Widget-Collection\Widget Quickfix\Widget-quickFix source code\obj\Release\net8.0\Widget-quickFix.csproj.CoreCompileInputs.cache
+C:\Users\leonm\Documents\GitHub\Discord-Widget-Collection\Widget Quickfix\Widget-quickFix source code\obj\Release\net8.0\Widget-quickFix.sourcelink.json
+C:\Users\leonm\Documents\GitHub\Discord-Widget-Collection\Widget Quickfix\Widget-quickFix source code\obj\Release\net8.0\Widget-quickFix.dll
+C:\Users\leonm\Documents\GitHub\Discord-Widget-Collection\Widget Quickfix\Widget-quickFix source code\obj\Release\net8.0\refint\Widget-quickFix.dll
+C:\Users\leonm\Documents\GitHub\Discord-Widget-Collection\Widget Quickfix\Widget-quickFix source code\obj\Release\net8.0\Widget-quickFix.pdb
+C:\Users\leonm\Documents\GitHub\Discord-Widget-Collection\Widget Quickfix\Widget-quickFix source code\obj\Release\net8.0\Widget-quickFix.genruntimeconfig.cache
+C:\Users\leonm\Documents\GitHub\Discord-Widget-Collection\Widget Quickfix\Widget-quickFix source code\obj\Release\net8.0\ref\Widget-quickFix.dll

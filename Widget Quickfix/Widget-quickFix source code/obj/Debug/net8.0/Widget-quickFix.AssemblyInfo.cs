@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Widget-quickFix")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+152df2b31608cf73c87391454894ae745e1a2be5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9860f1911ec73659f4c119f2d50118fe130ed7dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Widget-quickFix")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Widget-quickFix")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

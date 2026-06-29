@@ -46,6 +46,10 @@ class Program
         var (botToken, applicationId, userId, jsonString) = program.GetInput();
 
         syncDiscordWidget(botToken, applicationId, userId, jsonString);
+
+        Console.WriteLine();
+        Console.WriteLine("Press any key to exit...");
+        Console.ReadKey();
     }
 
     private static void syncDiscordWidget(string BotToken, string ApplicationId, string UserID, string JSONString)
@@ -65,6 +69,7 @@ class Program
             if (response.IsSuccessStatusCode)
             {
                 Console.WriteLine("Discord widget updated successfully.");
+                
             }
             else
             {
