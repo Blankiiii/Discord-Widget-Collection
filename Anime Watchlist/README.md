@@ -8,6 +8,7 @@
 
 ## Credits
 Idea from shxdow.v1 on Discord
+
 Code inspiration by kaxtusik on github
 
 ## JSON 
