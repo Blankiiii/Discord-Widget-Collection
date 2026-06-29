@@ -1,0 +1,10 @@
+{
+  "API_KEY": "YOUR_R6DATA_API_KEY",
+  "Player_Name": "YOUR_R6_USERNAME",
+  "Platform_Type": "uplay",
+  "Platform_Family": "pc",
+
+  "BOT_TOKEN": "YOUR_DISCORD_BOT_TOKEN",
+  "DISCORD_APP_ID": "YOUR_DISCORD_APPLICATION_ID",
+  "DISCORD_USER_ID": "YOUR_DISCORD_USER_ID"
+}
