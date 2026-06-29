@@ -1,10 +1,14 @@
 # Anime Watchlist
-## Widget Layout
+## Widget Layout / sample data
 
 <img width="953" height="449" alt="image" src="https://github.com/user-attachments/assets/d5d1502b-9ba2-488a-922f-54ed35211ecb" />
 
+<img width="1128" height="947" alt="image" src="https://github.com/user-attachments/assets/3bc98877-8ea2-4c22-afc3-2acf3da51135" />
+
+
 ## Credits
 Idea from shxdow.v1 on Discord
+Code inspiration by kaxtusik on github
 
 ## JSON 
 ```JSON
@@ -14,22 +18,43 @@ Idea from shxdow.v1 on Discord
       {
         "type": 1,
         "name": "anime_watched",
-        "value": "220+ Animes"
+        "value": "Amount of anime watched"
       },
       {
         "type": 1,
         "name": "nr1_anime",
-        "value": "That Time I Got Reincarnated As a Slime"
+        "value": "your #1 anime"
+      },
+      {
+        "type": 3,
+        "name": "nr1_anime_img",
+        "value": {
+          "url": "<URL to nr1_anime_img.png>"
+        }
       },
       {
         "type": 1,
         "name": "nr2_anime",
-        "value": "Witch Hat Atelier"
+        "value": "your #2 anime"
+      },
+      {
+        "type": 3,
+        "name": "nr2_anime_img",
+        "value": {
+          "url": "<URL to nr2_anime_img.png>"
+        }
       },
       {
         "type": 1,
         "name": "nr3_anime",
-        "value": "The Apothecary Diaries"
+        "value": "your #3 anime"
+      },
+      {
+        "type": 3,
+        "name": "nr3_anime_img",
+        "value": {
+          "url": "<URL to nr3_anime_img.png>"
+        }
       }
     ]
   }
@@ -38,19 +63,7 @@ Idea from shxdow.v1 on Discord
 
 ## Instructions
 
-1. create the widget and use Application Assets for the Images, since i am not making a script to put stuff in rn
+1. create the widget and add the sample data + assign it as user data to the widget objects ofc
+2. fill in your information into the .env file, including discord bot token from your widget, app_id and your user id, and the information you want displayed, links must be present and reachable otherwise you'll get a fallback image or error
+3. start the bat file and enjoy
 
-2. get the JSON up top filled with your information like the amount of anime you watched, nr1 anime etc (as in like a ranking)
-
-3. follow  Dziurwa's help on how to fix the "this widget is still syncing [(original discord message)](https://discord.com/channels/603970300668805120/1520804143764078783):
-
-        You need to run the application identity script (https://chloecinders.com/blog/discord-widgets#application-identities step)
-
-        PowerShell
-        curl -X PATCH "https://discord.com/api/v9/applications/{APPLICATION ID}/users/{DiscordUserId}/identities/0/profile" -H "Content-Type: application/json" -H "Authorization: Bot {BOT TOKEN}" -H "User-Agent: DiscordBot (https://github.com/discord/discord-api-docs, 1.0.0)" -d 'JSON DATA' 
-
-        If your JSON body string has any apostrophes in it, (ex. "don't"), do a double apostrophe.
-
-        don't → don''t
-
-        Run that, change json string with the json string u got from sample data, change the DiscordUserId with your own discord user id, change bot token with ur application's token and change discord application id with ur application 
