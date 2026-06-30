@@ -87,7 +87,7 @@
 ```
 
 if you finished creating the widget you just put your information including an API key from [R6Data](https://r6data.com) into the config file and then you can just run the bat file to make it autorefresh every 10 minutes (because the api has a free limit of 2500 calls per month i advise to just put it up to 20-25 mins (average game length)).
-you can change the time at the bottom of the index.js (20*60*1000 is 20 minutes, 25*60*1000 is 25 minutes)
+you can change the time at the bottom of the index.js (```20*60*1000``` is 20 minutes, ```25*60*1000``` is 25 minutes)
 
 ```js
 if (RUN_ONCE) {
