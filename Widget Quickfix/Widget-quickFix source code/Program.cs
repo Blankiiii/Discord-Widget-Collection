@@ -1,6 +1,4 @@
-﻿using System;
-using System.Net.Http;
-using System.Net.Http.Headers;
+﻿using System.Net.Http.Headers;
 using System.Text;
 
 class Program
@@ -23,7 +21,7 @@ class Program
         Console.WriteLine("Put your Discord User ID here:");
         userId = Console.ReadLine();
 
-        Console.WriteLine("Put your JSON String here (only formatted):");
+        Console.WriteLine("Put your JSON String here (only JSON.Stringyfy'd):");
         JSONString = Console.ReadLine();
         
 

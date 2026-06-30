@@ -1,5 +1,0 @@
-C:\Users\leonm\3d Objects\programming\VS2022\Widget-quickFix\bin\Release\net8.0\app.publish\Widget-quickFix.exe
-C:\Users\leonm\3d Objects\programming\VS2022\Widget-quickFix\bin\Release\net8.0\app.publish\Widget-quickFix.dll
-C:\Users\leonm\3d Objects\programming\VS2022\Widget-quickFix\bin\Release\net8.0\app.publish\Widget-quickFix.deps.json
-C:\Users\leonm\3d Objects\programming\VS2022\Widget-quickFix\bin\Release\net8.0\app.publish\Widget-quickFix.runtimeconfig.json
-C:\Users\leonm\3d Objects\programming\VS2022\Widget-quickFix\bin\Release\net8.0\app.publish\Widget-quickFix.pdb
