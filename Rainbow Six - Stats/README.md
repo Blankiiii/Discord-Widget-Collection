@@ -13,74 +13,18 @@
 {
   "data": {
     "dynamic": [
-      {
-        "type": 1,
-        "name": "user_Name",
-        "value": ""
-      },
-      {
-        "type": 1,
-        "name": "user_Platform",
-        "value": ""
-      },
-      {
-        "type": 1,
-        "name": "current_Rank",
-        "value": ""
-      },
-      {
-        "type": 3,
-        "name": "current_Rank_img",
-        "value": {
-          "url": "<URL to current_Rank_img.png>"
-        }
-      },
-      {
-        "type": 1,
-        "name": "max_Rank",
-        "value": ""
-      },
-      {
-        "type": 3,
-        "name": "max_Rank_img",
-        "value": {
-          "url": "<URL to max_Rank_img.png>"
-        }
-      },
-      {
-        "type": 1,
-        "name": "current_WR",
-        "value": ""
-      },
-      {
-        "type": 1,
-        "name": "current_KD",
-        "value": ""
-      },
-      {
-        "type": 1,
-        "name": "most_Played_Attack",
-        "value": ""
-      },
-      {
-        "type": 3,
-        "name": "most_Played_Attack_img",
-        "value": {
-          "url": "<URL to most_Played_Attack_img.png>"
-        }
-      },
-      {
-        "type": 1,
-        "name": "most_Played_Defense",
-        "value": ""
-      },
-      {
-        "type": 3,
-        "name": "most_Played_Defense_img",
-        "value": {
-          "url": "<URL to most_Played_Defense_img.png>"
-        }
-      }
+      { "type": 1, "name": "user_Name", "value": "" },
+      { "type": 1, "name": "user_Platform", "value": "" },
+      { "type": 1, "name": "current_Rank", "value": "" },
+      { "type": 3, "name": "current_Rank_img", "value": { "url": "<URL to current_Rank_img.png>" } },
+      { "type": 1, "name": "max_Rank", "value": "" },
+      { "type": 3, "name": "max_Rank_img", "value": { "url": "<URL to max_Rank_img.png>" } },
+      { "type": 1, "name": "current_WR", "value": "" },
+      { "type": 1, "name": "current_KD", "value": "" },
+      { "type": 1, "name": "most_Played_Attack", "value": "" },
+      { "type": 3, "name": "most_Played_Attack_img", "value": { "url": "<URL to most_Played_Attack_img.png>" } },
+      { "type": 1, "name": "most_Played_Defense", "value": "" },
+      { "type": 3, "name": "most_Played_Defense_img", "value": { "url": "<URL to most_Played_Defense_img.png>" } }
     ]
   }
 }

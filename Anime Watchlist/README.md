@@ -21,47 +21,13 @@ Code inspiration by kaxtusik on github
 {
   "data": {
     "dynamic": [
-      {
-        "type": 1,
-        "name": "anime_watched",
-        "value": "Amount of anime watched"
-      },
-      {
-        "type": 1,
-        "name": "nr1_anime",
-        "value": "your #1 anime"
-      },
-      {
-        "type": 3,
-        "name": "nr1_anime_img",
-        "value": {
-          "url": "<URL to nr1_anime_img.png>"
-        }
-      },
-      {
-        "type": 1,
-        "name": "nr2_anime",
-        "value": "your #2 anime"
-      },
-      {
-        "type": 3,
-        "name": "nr2_anime_img",
-        "value": {
-          "url": "<URL to nr2_anime_img.png>"
-        }
-      },
-      {
-        "type": 1,
-        "name": "nr3_anime",
-        "value": "your #3 anime"
-      },
-      {
-        "type": 3,
-        "name": "nr3_anime_img",
-        "value": {
-          "url": "<URL to nr3_anime_img.png>"
-        }
-      }
+      { "type": 1, "name": "anime_watched", "value": "Amount of anime watched" },
+      { "type": 1, "name": "nr1_anime", "value": "your #1 anime" },
+      { "type": 3, "name": "nr1_anime_img", "value": { "url": "<URL to nr1_anime_img.png>" } },
+      { "type": 1, "name": "nr2_anime", "value": "your #2 anime" },
+      { "type": 3, "name": "nr2_anime_img", "value": { "url": "<URL to nr2_anime_img.png>" } },
+      { "type": 1, "name": "nr3_anime", "value": "your #3 anime" },
+      { "type": 3, "name": "nr3_anime_img", "value": { "url": "<URL to nr3_anime_img.png>" } }
     ]
   }
 }
