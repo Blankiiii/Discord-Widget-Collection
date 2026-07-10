@@ -1,0 +1,16 @@
+{
+  "name": "rainbow-six-stats-widget",
+  "version": "1.0.0",
+  "description": "Rainbow Six stats Discord widget",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "upload": "node upload-widget.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

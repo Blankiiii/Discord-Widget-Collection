@@ -86,25 +86,14 @@
 }
 ```
 
-if you finished creating the widget you just put your information including an API key from [R6Data](https://r6data.com) into the config file and then you can just run the bat file to make it autorefresh every 10 minutes (because the api has a free limit of 2500 calls per month i advise to just put it up to 20-25 mins (average game length)).
-you can change the time at the bottom of the index.js (```20 * 60 * 1000``` is 20 minutes, ```25 * 60 * 1000``` is 25 minutes)
+## Setup
+1. Copy example.config.json to config.json and fill in your R6Data API key, player name, platform type, and platform family.
+2. Install dependencies with npm install.
+3. Run npm start to generate the widget payload, or use start.bat on Windows.
+4. Run npm run upload to push the generated payload to Discord.
 
-```js
-if (RUN_ONCE) {
-  runOnce();
-} else {
-  const intervalMs = 10 * 60 * 1000;
-  const intervalId = setInterval(runOnce, intervalMs);
+The project now uses a src-based layout similar to the Steam Profile Stats repository, with the main logic split into providers and config handling.
 
-  process.on('SIGINT', () => {
-    console.log('Stopping on Ctrl+C...');
-    clearInterval(intervalId);
-    process.exit(0);
-  });
-
-  runOnce();
-}
-```
-
+You can adjust the refresh interval in src/index.js by changing the intervalMs value.
 
 OKIDOKI HAVE FUN BYEEEEEEEE

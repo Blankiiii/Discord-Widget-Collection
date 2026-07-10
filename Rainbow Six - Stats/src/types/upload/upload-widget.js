@@ -1,20 +1,39 @@
 const { execFile } = require('child_process');
+const fs = require('fs');
 const path = require('path');
 
-const { BOT_TOKEN, DISCORD_APP_ID, DISCORD_USER_ID } = require('./config.json');
+function readDiscordConfig() {
+  const configPath = path.resolve(__dirname, '..', '..', '..', 'config.json');
+  if (fs.existsSync(configPath)) {
+    const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+    return {
+      BOT_TOKEN: process.env.BOT_TOKEN || config.BOT_TOKEN,
+      DISCORD_APP_ID: process.env.DISCORD_APP_ID || config.DISCORD_APP_ID,
+      DISCORD_USER_ID: process.env.DISCORD_USER_ID || config.DISCORD_USER_ID
+    };
+  }
+
+  return {
+    BOT_TOKEN: process.env.BOT_TOKEN,
+    DISCORD_APP_ID: process.env.DISCORD_APP_ID,
+    DISCORD_USER_ID: process.env.DISCORD_USER_ID
+  };
+}
+
+const { BOT_TOKEN, DISCORD_APP_ID, DISCORD_USER_ID } = readDiscordConfig();
 
 function runIndexScript() {
   return new Promise((resolve, reject) => {
-    const scriptPath = path.join(__dirname, 'index.js');
+    const scriptPath = path.resolve(__dirname, '..', '..', '..', 'src', 'index.js');
     execFile(process.execPath, [scriptPath, '--once'], { cwd: __dirname, maxBuffer: 10 * 1024 * 1024 }, (error, stdout, stderr) => {
       if (error) {
-        return reject(new Error(`index.js execution failed: ${error.message}\n${stderr}`));
+        return reject(new Error(`src/index.js execution failed: ${error.message}\n${stderr}`));
       }
       try {
         const json = JSON.parse(stdout.trim());
         resolve(json);
       } catch (parseError) {
-        reject(new Error(`Failed to parse index.js output as JSON:\n${parseError.message}\nOutput:\n${stdout}`));
+        reject(new Error(`Failed to parse src/index.js output as JSON:\n${parseError.message}\nOutput:\n${stdout}`));
       }
     });
   });
@@ -45,7 +64,7 @@ async function uploadToDiscord(payload) {
 }
 
 async function main() {
-  console.log('Generating R6 widget JSON from index.js...');
+  console.log('Generating R6 widget JSON from src/index.js...');
   const payload = await runIndexScript();
 
   console.log('Uploading widget JSON to Discord...');

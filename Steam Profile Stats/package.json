@@ -1,0 +1,24 @@
+{
+  "name": "steamstats_widget",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "literally.blank",
+  "license": "ISC",
+  "packageManager": "npm@9.8.1",
+  "dependencies": {
+    "@types/node": "^25.9.3",
+    "axios": "^1.17.0",
+    "dotenv": "^17.4.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}

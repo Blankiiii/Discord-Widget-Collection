@@ -1,7 +1,7 @@
 const { execFile } = require('child_process');
 const path = require('path');
 
-const scriptPath = path.join(__dirname, 'upload-widget.js');
+const scriptPath = path.join(__dirname, 'upload', 'upload-widget.js');
 const intervalMs = 10 * 60 * 1000;
 let running = false;
 

@@ -1,0 +1,7 @@
+*.rar
+*.zip
+.vs
+.env
+config.json
+Dockerfile
+node_modules
