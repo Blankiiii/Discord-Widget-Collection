@@ -9,7 +9,7 @@
 
 
 ## JSON 
-```JSON
+```ts
 {
     username: profile.displayName,
     data: {
