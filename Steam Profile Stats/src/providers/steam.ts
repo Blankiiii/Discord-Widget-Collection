@@ -115,7 +115,6 @@ export const fetchSteamProfile = async (steamId?: string): Promise<SteamProfile>
     friends: friends.friendslist?.friends?.length ?? 0,
     personaState: player?.personastate ?? 0,
     gamesOwned: games.game_count ?? 0,
-    mostPlayedGameDisplay: recent.games?.[0]?.name ?? games.games?.[0]?.name ?? 'No recent games',
-    simpleUrl: player?.profileurl ? parseSimpleUrl(player.profileurl) : ''
+    mostPlayedGameDisplay: recent.games?.[0]?.name ?? games.games?.[0]?.name ?? 'No recent games'
   };
 };

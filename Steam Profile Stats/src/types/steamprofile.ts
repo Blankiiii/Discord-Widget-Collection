@@ -10,7 +10,6 @@ export interface SteamProfile {
   personaState: number;
   gamesOwned: number;
   mostPlayedGameDisplay: string;
-  simpleUrl: string;
 }
 
 export interface DiscordIdentityPayload {
@@ -52,7 +51,6 @@ export function toIdentity(profile: SteamProfile): DiscordIdentityPayload {
         { type: 2, name: 'friends', value: profile.friends },
         { type: 1, name: 'personastate', value: personaStateLabel },
         { type: 1, name: 'mostplayedgame', value: profile.mostPlayedGameDisplay },
-        { type: 1, name: 'simpleurl', value: profile.simpleUrl }
       ]
     }
   };
