@@ -38,7 +38,7 @@
 3. start the bat file and enjoy
 
 ## OPTIONAL
-- you can make a 3rd Subtitle with your most played recent game (mostplayedgame), this is however completly optional and just shows
+- you can make a 3rd Subtitle with your most played recent game (mostplayedgame), this is however completly optional
 
   <img width="1263" height="559" alt="image" src="https://github.com/user-attachments/assets/ad963fe7-8a92-4876-8a3b-3644e375dee4" />
 
