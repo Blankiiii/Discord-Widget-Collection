@@ -12,3 +12,9 @@ jspm_packages/
 Dockerfile
 config.json
 .env
+
+
+[Oo]bj/
+[Bb]in/
+.vs/
+*.user
