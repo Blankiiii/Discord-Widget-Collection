@@ -1,3 +1,8 @@
 @echo off
 cd /d "%~dp0"
-start "" /min cmd /c "node src/types/upload-widget-loop.js"
+if not exist node_modules (
+    echo Installing dependencies...
+    npm install
+    npm run autorun
+)
+npm run autorun
