@@ -41,6 +41,4 @@
 
 The project now uses a src-based layout similar to the Steam Profile Stats repository, with the main logic split into providers and config handling.
 
-You can adjust the refresh interval in src/index.js by changing the intervalMs value.
-
 OKIDOKI HAVE FUN BYEEEEEEEE
