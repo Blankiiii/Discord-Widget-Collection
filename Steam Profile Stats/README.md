@@ -37,6 +37,9 @@
 2. fill in your information into the .env file, including discord bot token from your widget, app_id and your user id, as well as your [steamid](https://steamid.io/lookup/) and [steamapi key](https://steamcommunity.com/dev/apikey)
 3. start the bat file and enjoy
 
+## DISCLAIMER
+- Discord widgets are not meant for Realtime stats which is why i have made the Update interval to 24 hours like any other games widget has, you can still change it but i will not be responsible if your Account gets flagged.
+
 ## OPTIONAL
 - you can make a 3rd Subtitle with your most played recent game (mostplayedgame), this is however completly optional
 

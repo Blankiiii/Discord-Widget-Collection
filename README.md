@@ -17,6 +17,8 @@ choose any you want and follow the instructions in the readme
 - `widget files` - code
 - `README.md` - project overview, a screenshot of the widget and the required JSON aka the sample data
 
+## DISCLAIMER
+- Discord widgets are not meant for Realtime stats which is why i have made the Update interval to 24 hours like any other games widget has, you can still change it but i will not be responsible if your Account gets flagged.
 
 ## Usage
 

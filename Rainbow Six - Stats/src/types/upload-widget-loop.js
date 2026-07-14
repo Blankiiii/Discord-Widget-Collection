@@ -2,7 +2,6 @@ const { execFile } = require('child_process');
 const path = require('path');
 
 const scriptPath = path.join(__dirname, 'upload', 'upload-widget.js');
-const intervalMs = 10 * 60 * 1000;
 let running = false;
 
 function runUploadWidget() {
@@ -33,7 +32,7 @@ function runUploadWidget() {
   });
 }
 
-const intervalId = setInterval(runUploadWidget, intervalMs);
+const intervalId = setInterval(runUploadWidget, 24*3600*1000); // Run every 24 hours
 
 process.on('SIGINT', () => {
   console.log('Stopping upload-widget-loop...');

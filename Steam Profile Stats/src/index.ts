@@ -28,5 +28,6 @@ const scheduleUpdate = async () => {
   }
 };
 
+
 scheduleUpdate();
-setInterval(scheduleUpdate, 60 * 1000);
+setInterval(scheduleUpdate, 24*3600*1000); // Update every 24 hours
