@@ -30,6 +30,9 @@
 }
 ```
 
+## DISCLAIMER
+- Discord widgets are not meant for Realtime stats which is why i have made the Update interval to 24 hours like any other games widget has, you can still change it but i will not be responsible if your Account gets flagged.
+
 ## Setup
 1. Copy example.config.json to config.json and fill in your R6Data API key, player name, platform type, and platform family.
 2. Install dependencies with npm install.
