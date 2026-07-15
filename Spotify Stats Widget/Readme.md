@@ -2,7 +2,10 @@
 
 ## Widget Layout / sample data
 
-*(Add your preview images here)*
+<img width="915" height="529" alt="image" src="https://github.com/user-attachments/assets/a5af6848-fb97-47c5-bafe-9a493f148227" />
+<img width="1521" height="941" alt="image" src="https://github.com/user-attachments/assets/5c6b0810-e0fe-402d-891b-3131ba83d7ea" />
+<img width="1518" height="333" alt="image" src="https://github.com/user-attachments/assets/94b7b4d4-7992-430e-808a-04d4f737080b" />
+
 
 ## [TheCreativeGod's widget extension (import)](https://github.com/TheCreativeGod/Discord-Widgets-Extension)
 ```json
