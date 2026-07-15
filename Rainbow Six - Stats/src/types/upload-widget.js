@@ -1,9 +1,8 @@
-const { execFile } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
 function readDiscordConfig() {
-  const configPath = path.resolve(__dirname, '..', '..', '..', 'config.json');
+  const configPath = path.resolve(__dirname, '..', '..', 'config.json');
   if (fs.existsSync(configPath)) {
     const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
     return {
@@ -21,23 +20,6 @@ function readDiscordConfig() {
 }
 
 const { BOT_TOKEN, DISCORD_APP_ID, DISCORD_USER_ID } = readDiscordConfig();
-
-function runIndexScript() {
-  return new Promise((resolve, reject) => {
-    const scriptPath = path.resolve(__dirname, '..', '..', '..', 'src', 'index.js');
-    execFile(process.execPath, [scriptPath, '--once'], { cwd: __dirname, maxBuffer: 10 * 1024 * 1024 }, (error, stdout, stderr) => {
-      if (error) {
-        return reject(new Error(`src/index.js execution failed: ${error.message}\n${stderr}`));
-      }
-      try {
-        const json = JSON.parse(stdout.trim());
-        resolve(json);
-      } catch (parseError) {
-        reject(new Error(`Failed to parse src/index.js output as JSON:\n${parseError.message}\nOutput:\n${stdout}`));
-      }
-    });
-  });
-}
 
 async function uploadToDiscord(payload) {
   if (!BOT_TOKEN || !DISCORD_APP_ID || !DISCORD_USER_ID) {
@@ -63,13 +45,16 @@ async function uploadToDiscord(payload) {
   return response;
 }
 
+// Read the payload passed from index.js via stdin
 async function main() {
-  console.log('Generating R6 widget JSON from src/index.js...');
-  const payload = await runIndexScript();
+  const payloadString = fs.readFileSync(0, 'utf-8'); // 0 is stdin descriptor
+  if (!payloadString.trim()) {
+    throw new Error('No payload received from index.js via stdin.');
+  }
 
+  const payload = JSON.parse(payloadString);
   console.log('Uploading widget JSON to Discord...');
   await uploadToDiscord(payload);
-
   console.log('Upload complete.');
 }
 

@@ -12,6 +12,7 @@ jspm_packages/
 Dockerfile
 config.json
 .env
+.node-persist
 
 
 [Oo]bj/

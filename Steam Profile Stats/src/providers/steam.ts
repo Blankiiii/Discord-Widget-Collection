@@ -4,7 +4,7 @@ import type { SteamProfile } from '../types/steamprofile';
 dotenv.config();
 
 interface SteamPlayerSummaryResponse {
-  players?: Array<{
+    players?: Array<{
     steamid?: string;
     personaname?: string;
     avatarfull?: string;
@@ -19,14 +19,14 @@ interface SteamLevelResponse {
 }
 
 interface SteamFriendsResponse {
-  friendslist?: {
+    friendslist?: {
     friends?: unknown[];
   };
 }
 
 interface SteamGamesResponse {
-  game_count?: number;
-  games?: Array<{
+    game_count?: number;
+    games?: Array<{
     name?: string;
     playtime_forever?: number;
     playtime_2weeks?: number;
@@ -34,7 +34,7 @@ interface SteamGamesResponse {
 }
 
 interface SteamRecentGamesResponse {
-  games?: Array<{
+    games?: Array<{
     name?: string;
     playtime_2weeks?: number;
   }>;

@@ -9,7 +9,7 @@ if not exist node_modules (
     echo Starting the application! Your widget will update every 24h
     npm run start
 )
-echo ----- Steam Profile Stats Widget ----- ❤️ made by blank with ❤️  -----
+echo ----- Spotify Profile Stats Widget ----- ❤️ made by blank with ❤️  -----
 echo:
 echo:
 echo Starting the application! Your widget will update every 24h
