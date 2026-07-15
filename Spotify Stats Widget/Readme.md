@@ -33,7 +33,7 @@
 }
 ```
 
-Instructions
+## Instructions
 1. Create the widget and add user data to the widget objects.
 2. fill out your info in the .env, for more info check prerequisites
 3. Start the bat file and enjoy.
