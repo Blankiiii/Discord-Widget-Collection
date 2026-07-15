@@ -45,3 +45,6 @@ Before running this project, ensure you have:
 1. A Spotify Premium Account.
 2. A registered application in the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard).
 3. `SPOTIFY_CLIENT_ID`, `DISCORD_TOKEN`, `APP_ID`, `DISCORD_USER_ID` added to your `.env` file.
+
+# DISCLAIMER
+- Discord widgets are not meant for real-time stats; I have set the update interval to 24 hours. You can change this, but I will not be responsible if your account gets flagged.
