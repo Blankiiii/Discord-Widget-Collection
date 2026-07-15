@@ -21,7 +21,7 @@ export async function patchIdentity(identity: DiscordIdentityPayload, userID: st
 
   try {
     return await discordAPI.patch(
-      `/applications/${applicationId}/users/${userID}/identities/${userID}/profile`,
+      `/applications/${applicationId}/users/${userID}/identities/0/profile`,
       identity,
       {
         headers: {
