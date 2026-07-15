@@ -8,14 +8,19 @@ dotenv.config();
 // API RESPONSE TYPES
 
 interface SpotifyUserResponse {
+  id: string;
   display_name: string;
   images?: Array<{ url: string }>;
   followers?: { total: number };
 }
 
 interface SpotifyPlaylistsResponse {
-  items: Array<{ public: boolean }>;
+  items: Array<{ 
+    public: boolean;
+    owner: { id: string }; // Add this
+  }>;
 }
+
 
 interface SpotifyTopArtistsResponse {
   items: Array<{
@@ -104,7 +109,11 @@ export const fetchSpotifyProfile = async (): Promise<spotifyProfile> => {
     library
   } = Object.fromEntries(results) as SpotifyApiResponses;
 
-  const publicPlaylists = playlists.items?.filter((p) => p?.public).length ?? 0;
+  const myUserId = user.id;
+
+  const publicPlaylists = playlists.items?.filter((p) => 
+      p.public && p.owner.id === myUserId
+    ).length ?? 0;
 
   const obsessionTrack = topTracksShort.items?.[0];
   const currentObsession = obsessionTrack 
