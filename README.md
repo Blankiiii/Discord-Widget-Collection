@@ -8,8 +8,8 @@ choose any you want and follow the instructions in the readme
 
 1. to actually use and or create a Widget i advise you either follow [chloecinders](https://chloecinders.com/blog/discord-widgets#application-identities) or [aamiaa's](https://gist.github.com/aamiaa/7cdd590e3949cd654758bc90bcb4710b) tutorial or you join the discord previews server and look into the [widget channels](https://discord.com/channels/603970300668805120/1520833094154719404)
 
-2. Create the Widget by yourself or copy the layout from the Screenshot
-
+2. Create the Widget by yourself or copy the layout from the Screenshot, in addition under every widget you will find a long string of json for the [widgetcreator extension](https://chromewebstore.google.com/detail/discord-widget-configurat/abfniekbmcdlonmgjnnhifdpjepkgngb
+)
 3. input any information such as api-keys (if needed), bot-token or user-, bot-id into the config.json and start the code (I will most likely have a simple bat file to run or have it explicitly said which one of the files to run)
 
 ## Contents
