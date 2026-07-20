@@ -36,7 +36,7 @@
 ## Instructions
 
 1. create the widget and add user data to the widget objects ofc
-2. fill in your information into the .env file, including discord bot token from your widget, app_id and your user id, as well as your [steamid](https://steamid.io/lookup/) and [steamapi key](https://steamcommunity.com/dev/apikey)
+2. fill in your information into the .env file, including discord bot token from your widget, app_id and your user id, as well as your [steamid](https://steamid.io/lookup/) (steamID64) and [steamapi key](https://steamcommunity.com/dev/apikey)
 3. start the bat file and enjoy
 
 ## DISCLAIMER
