@@ -41,7 +41,7 @@
 4. start the bat file and enjoy
 
 ### Example
-![alt text](/assets/mostoverallrecent.png)
+![alt text](assets/mostoverallrecent.png)
 
 ## DISCLAIMER
 - Discord widgets are not meant for realtime stats which is why i have made the update interval to 24 hours like any other games widget has, you can still change it but i will not be responsible if your account gets flagged.
