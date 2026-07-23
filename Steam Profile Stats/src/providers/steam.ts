@@ -103,6 +103,19 @@ export const fetchSteamProfile = async (steamId?: string): Promise<SteamProfile>
   const player = user.players?.[0];
   const totalPlaytimeMinutes = (games.games ?? []).reduce((sum, game) => sum + (game.playtime_forever ?? 0), 0);
   const totalPlaytime2WeeksMinutes = (recent.games ?? []).reduce((sum, game) => sum + (game.playtime_2weeks ?? 0), 0);
+  const ownedGames = games.games ?? [];
+
+  const mostPlayedGame = ownedGames.sort((a, b) => (b.playtime_forever ?? 0) - (a.playtime_forever ?? 0))[0];
+
+  let GAMEDISPLAY = "Unknown";
+
+  if (process.env.GAMEDISPLAY === "overall") {
+    GAMEDISPLAY = `Most played game: ${mostPlayedGame?.name ?? "No games"}`;
+  } else if (process.env.GAMEDISPLAY === "recent") {
+    GAMEDISPLAY = `Most played recently: ${recent.games?.[0]?.name ?? "No recent games"}`;
+  } else {
+    GAMEDISPLAY = "Something went wrong";
+  }
 
   return {
     steamId64: player?.steamid ?? resolvedSteamId,
@@ -115,6 +128,6 @@ export const fetchSteamProfile = async (steamId?: string): Promise<SteamProfile>
     friends: friends.friendslist?.friends?.length ?? 0,
     personaState: player?.personastate ?? 0,
     gamesOwned: games.game_count ?? 0,
-    mostPlayedGameDisplay: recent.games?.[0]?.name ?? 'No recent games'
+    mostPlayedGameDisplay: GAMEDISPLAY
   };
 };
